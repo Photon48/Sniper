@@ -20,7 +20,7 @@ import streamlit as st
 
 
 def main(user_goal, uploaded_image):
-    pytesseract.pytesseract.tesseract_cmd = "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+    # pytesseract.pytesseract.tesseract_cmd = "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
 
 
     class Sniper:
