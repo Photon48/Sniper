@@ -13,7 +13,7 @@ import os
 
 
 st.title('Sniper 🧿')
-st.subheader("Mouse Control Capability for Multi-Modal LLMs")
+st.subheader("Mouse Control Capability for GPT4-Omni")
 
 # Using object notation
 with st.sidebar:

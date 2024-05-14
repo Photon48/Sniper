@@ -1,7 +1,7 @@
 import base64
 import requests
 from openai import OpenAI
-import os
+
 import json
 import streamlit as st
 from prompts import prompt_template
@@ -11,7 +11,6 @@ from dotenv import load_dotenv
 load_dotenv()
 #Initalize Open AI
 client = OpenAI()
-api_key = os.getenv("OPENAI_API_KEY")
 api_key = st.secrets["OPENAI_API_KEY"]
 
 
@@ -29,7 +28,7 @@ def llm_call(user_goal, base64_image, GRID_SIZE, ocr_strings):
   }
 
   payload = {
-    "model": "gpt-4-turbo",
+    "model": "gpt-4o",
     "messages": [
       {
         "role": "user",
